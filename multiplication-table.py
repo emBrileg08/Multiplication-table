@@ -24,11 +24,12 @@ Height of multiplication table: 8
 
 width=1+int(input("Width of multiplication table: ")) 
 height=1+int(input("Height of multiplication table: ")) #because they go to 1 before
+print("")
 
 hr=range(1,height)
 wr=range(1,width)
 
 for i in hr:
     for j in wr:
-        print("{0} ".format(i*j), end="")
-    print("{0} ".format(i*j))
+        print("{0:>4}".format(i*j), end="")
+    print()
